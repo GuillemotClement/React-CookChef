@@ -14,10 +14,10 @@ Dans cette première partie, on vient mettre en place :
 
 Pour récupérer et travailler sur le projet :
 
-`git clone lien@github``
+`git clone lien@github`
 
-Dans le terminal lancer 
-`npm i`
+Dans le terminal lancer `npm i`
+
 Ce qui vient télécharger les dépendances
 
 ## Technologie 
