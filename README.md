@@ -25,3 +25,7 @@ Ce qui vient télécharger les dépendances
 * React
 * SASS
 * Vite
+
+## Aperçus
+
+Site visible à l'adresse : https://cookchefbyme.netlify.app
