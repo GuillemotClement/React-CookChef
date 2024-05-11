@@ -1,14 +1,15 @@
 import styles from './Recipe.module.scss';
-import picture from '../assets/images/recette.jpg';
 
-function Recipe(){
+
+function Recipe({ title, picture }){
     return (
         <div className={ styles.recipe }>
             <div className={ styles.imageContainer}>
                 <img src={ picture} alt="picture recipe" />
             </div>
-            <div className={`flex row justify-center align-center ${styles.recipeTitle}`}>
-                <h3>Pankake au caca</h3>
+            <div className={`flex column justify-center align-center ${styles.recipeTitle}`}>
+                <h3 className='mb10'>{ title }</h3>
+                <i className={`fa-solid fa-heart ${ liked ? 'text-primary' : ''}`}></i>
             </div>
         </div>
     );
