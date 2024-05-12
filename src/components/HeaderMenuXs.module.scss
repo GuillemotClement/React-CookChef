@@ -1,0 +1,19 @@
+@use '../assets/styles/mixin' as mixin;
+
+.menuContainer{
+  // on as mis une position relative au header pour fixer sa référence
+  position: absolute;
+  top: 68px;
+  right: 10px;
+  width: 200px;
+  li{
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.2s;
+    &:hover{
+      background: var(--primary);
+      color: white;
+    }
+  }
+}
