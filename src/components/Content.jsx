@@ -24,7 +24,7 @@ function Content(){
 							</div>
 							<div className={ styles.grid }>
 									{recipes.filter(r => r.title.toLowerCase().startsWith(filter)).map( r => (
-											<Recipe title={r.title} picture={r.picture}/>
+											<Recipe key={r._id} title={r.title} picture={r.picture}/>
 									))}
 							</div>
 						</div>
