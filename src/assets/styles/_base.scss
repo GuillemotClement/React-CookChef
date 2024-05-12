@@ -25,3 +25,11 @@ ul{
 img{
 	max-width: 100%;
 }
+
+input{
+    font-family: var(--font-text);
+}
+
+::placeholder{
+    font-family: var(--font-text);
+}
