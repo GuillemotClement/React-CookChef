@@ -1,9 +1,16 @@
+import { useState } from 'react';
 import styles from './Recipe.module.scss';
 
-
 function Recipe({ title, picture }){
+
+    const [liked, setLiked] = useState(false);
+
+    function handleClick(){
+        setLiked(!liked);
+    }
+
     return (
-        <div className={ styles.recipe }>
+        <div onClick={handleClick} className={ styles.recipe }>
             <div className={ styles.imageContainer}>
                 <img src={ picture} alt="picture recipe" />
             </div>
